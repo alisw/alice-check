@@ -1,0 +1,16 @@
+{
+  "name": "alice-check",
+  "version": "1.0.0",
+  "description": "Check if a CERN user is correctly registered as ALICE user",
+  "main": "index.js",
+  "repository": "dberzano/alice-check",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ALICE"
+  ],
+  "author": "dario.berzano@gmail.com",
+  "license": "GPL3"
+}

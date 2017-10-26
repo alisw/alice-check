@@ -1,2 +1,5 @@
-# alice-check
-Node.js app to check if user is registered to ALICE
+alice-check
+===========
+
+Simple Node.js Web application to check whether a connected user is a legitimate
+ALICE user. Relies on CERN SSO.

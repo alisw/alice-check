@@ -26,10 +26,10 @@ http.createServer(function (req, res) {
   else if (uri.pathname == "/") {
     res.writeHead(200, nocache({"Content-Type": "text/html"}));
 
-    var user = req.headers["adfs_login"];
-    var name = req.headers["adfs_fullname"];
-    var groups = req.headers["adfs_group"];
-    groups = (groups === undefined) ? [] : groups.split(";");
+    var user = req.headers["oidc_claim_sub"];
+    var name = req.headers["oidc_claim_name"];
+    var groups = req.headers["oidc_claim_cern_roles"];
+    groups = (groups === undefined) ? [] : groups.split(",");
 
     content = "";
     content += boolitem(user !== undefined && name !== undefined,
